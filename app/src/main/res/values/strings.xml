@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BTDroid</string>
+    <string name="connect">CONNECT</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="search">SEARCH</string>
+</resources>
