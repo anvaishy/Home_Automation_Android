@@ -65,10 +65,8 @@ public class Controlling extends Activity {
         Log.d(TAG, "Ready");
         b1o.setOnClickListener(new View.OnClickListener()
         {
-
             @Override
             public void onClick(View v) {
-
                 try {
                     mBTSocket.getOutputStream().write(on1.getBytes());
                     c1.setCardBackgroundColor(Color.parseColor("#00FF3C"));

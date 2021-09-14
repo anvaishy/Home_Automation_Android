@@ -7,7 +7,6 @@ import android.content.pm.ActivityInfo;
 public class helper {
     public static void initialize(Activity activity) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(activity);
-
         String orientation = prefs.getString("prefOrientation", "Null");
         if ("Landscape".equals(orientation)) {
             activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);

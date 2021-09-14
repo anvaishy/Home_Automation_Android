@@ -2,9 +2,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center_vertical" >
-
-    <!-- Defining where should text be placed. You set you text color here -->
-
     <TextView
         android:id="@+id/lstContent"
         android:layout_width="fill_parent"
