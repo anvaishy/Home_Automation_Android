@@ -23,7 +23,6 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -56,14 +55,17 @@ public class MainActivity extends Activity {
                 initList(list);
                 MyAdapter adapter = (MyAdapter) listView.getAdapter();
                 int selectedIndex = savedInstanceState.getInt(DEVICE_LIST_SELECTED);
-                if (selectedIndex != -1) {
+                if (selectedIndex != -1){
                     adapter.setSelectedIndex(selectedIndex);
                     connect.setEnabled(true);
                 }
-            } else {
+                else{connect.setEnabled(false);
+                    Toast.makeText(getApplicationContext(), "No Device Selected", Toast.LENGTH_SHORT).show();
+                }
+            } else {connect.setEnabled(false);
                 initList(new ArrayList<BluetoothDevice>());
             }
-        } else {
+        } else {connect.setEnabled(false);
             initList(new ArrayList<BluetoothDevice>());
         }
         search.setOnClickListener(new View.OnClickListener() {

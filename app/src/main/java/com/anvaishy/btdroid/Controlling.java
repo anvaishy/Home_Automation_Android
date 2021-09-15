@@ -10,19 +10,12 @@ import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.ListView;
 import android.widget.Toast;
-
 import androidx.cardview.widget.CardView;
-
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Set;
 import java.util.UUID;
 public class Controlling extends Activity {
     private static final String TAG = "BlueTest5-Controlling";
@@ -163,7 +156,6 @@ public class Controlling extends Activity {
         @Override
         public void run() {
             InputStream inputStream;
-
             try {
                 inputStream = mBTSocket.getInputStream();
                 while (!bStop) {

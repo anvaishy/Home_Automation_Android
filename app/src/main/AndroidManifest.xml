@@ -14,8 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BTDroid">
-        <activity android:name=".Controlling"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".Controlling"
+            android:configChanges="keyboardHidden|orientation|screenSize"></activity>
+        <activity android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
